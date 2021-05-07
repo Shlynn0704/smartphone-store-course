@@ -1,0 +1,16 @@
+title: smartphone store
+description: ok ok
+template:
+  repo: smartphone-store-template
+  name: smartphone-store
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
